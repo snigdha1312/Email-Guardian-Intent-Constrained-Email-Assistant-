@@ -1,0 +1,17 @@
+scope: "Delegate AI agent with highly restricted permissions. Can only reply to existing client threads."
+max_actions_per_day: 5
+rules:
+  - action: send_email
+    allowed_domains:
+      - client-acme.com
+      - client-globex.com
+      - client-initech.com
+    denied_domains: []
+    requires_existing_thread: true
+  - action: draft_reply
+    allowed_domains:
+      - client-acme.com
+      - client-globex.com
+      - client-initech.com
+    denied_domains: []
+    requires_existing_thread: true

@@ -1,0 +1,23 @@
+scope: "Primary user identity with broad access for client communications and administrative tasks."
+max_actions_per_day: 20
+rules:
+  - action: send_email
+    allowed_domains:
+      - client-acme.com
+      - client-globex.com
+    denied_domains: []
+    requires_existing_thread: false
+  - action: draft_reply
+    allowed_domains:
+      - client-acme.com
+      - client-globex.com
+    denied_domains: []
+    requires_existing_thread: false
+  - action: archive_thread
+    allowed_domains: []
+    denied_domains: []
+    requires_existing_thread: false
+  - action: schedule_followup
+    allowed_domains: []
+    denied_domains: []
+    requires_existing_thread: false
